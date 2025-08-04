@@ -84,7 +84,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="serif-monospace"
         android:text="testing"
-        android:textSize="10dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
