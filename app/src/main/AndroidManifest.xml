@@ -24,6 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name = "lastFMKey"
+            android:value = "${lastFMAPI}"/>
+        <meta-data
+            android:name = "spotifyKey"
+            android:value = "${spotifyAPI}" />
     </application>
 
 </manifest>
