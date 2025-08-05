@@ -143,7 +143,7 @@ class MainActivity : AppCompatActivity() {
                 arr = studyTags
             }
             val num = Random.nextInt(arr.size)
-            var finalMood = arr[num]
+            val finalMood = arr[num]
             Log.d("arrayindex", num.toString())
             Log.d("finalMood", finalMood)
             fetchData(finalMood)
