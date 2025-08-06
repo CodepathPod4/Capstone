@@ -11,7 +11,7 @@
 
 ### Description 
 
-Users can generate a list of songs based on their mood according to different tags.
+"Moodify" is an Android app programmed in Kotlin where users can generate a list of songs based on their mood according to different tags from an API called last.fm. Different options for moods include "party," "sad," workout," "chill," and "study." The app utilizes a recycler view which enables users to scroll down for more songs in the generated playlist. This app is perfect for users who want to create a playlist according to their mood, but they do not have the time to do it manually.
 
 ### App Evaluation
 
@@ -68,10 +68,13 @@ Required Features
 
 ## Build Notes
 
-Here's a place for any other notes on the app, it's creation 
-process, or what you learned this unit!  
+App creation process taught essential skills such as product brainstorming, wireframing/prototyping via Figma, Android developement, API calls, handling recycler views, etc.     
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
+
+
+
+
 
 ## License
 
