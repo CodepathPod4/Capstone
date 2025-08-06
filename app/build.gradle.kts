@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+    id("kotlin-kapt")
 }
 
 android {
@@ -15,7 +16,8 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders.put("lastFMAPI", if (project.hasProperty("lastFMAPI")) project.property("lastFMAPI") as String else "")
+        manifestPlaceholders.put("spotifyAPI", if (project.hasProperty("spotifyAPI")) project.property("spotifyAPI") as String else "")
     }
 
     buildTypes {
@@ -37,6 +39,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.glide)
+    kapt(libs.compiler)
     implementation(libs.asynchttpclient)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
