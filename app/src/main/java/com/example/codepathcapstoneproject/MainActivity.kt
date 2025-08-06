@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fetchData(mood: String) {
+        Log.d("fetchData mood", mood)
         val client = AsyncHttpClient()
         val ai: ApplicationInfo = application.packageManager
             .getApplicationInfo(application.packageName, PackageManager.GET_META_DATA)
@@ -91,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                             tracks.getJSONObject(i).getJSONObject("artist").getString("name")
                         Log.d("lastfm artist", artist)
                         Log.d("lastfm track", track)
-                        getAlbumArt(track, artist)
+                        getAlbumArt(track, artist, mood)
                     }
                 }
             }
@@ -102,7 +103,8 @@ class MainActivity : AppCompatActivity() {
         }]
     }
 
-    private fun getAlbumArt(track: String, artist: String) {
+    private fun getAlbumArt(track: String, artist: String, mood:String) {
+        Log.d("arttest", "start")
         val client = AsyncHttpClient()
         val headers = RequestHeaders()
         val ai: ApplicationInfo = application.packageManager
@@ -125,6 +127,8 @@ class MainActivity : AppCompatActivity() {
 
                     runOnUiThread {
                         songList.add(Song(track, artist, imageUrl))
+                        val errorView = findViewById<TextView>(R.id.errorMessage)
+                        errorView.text = "Displaying results for $mood:"
                         adapter.notifyItemInserted(songList.size - 1)
                     }
                 }
@@ -140,6 +144,8 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             val searchMood =findViewById<EditText>(R.id.searchBar).getText().toString()
             Log.d("search input", "search input set to $searchMood")
+            songList.clear()
+            adapter.notifyDataSetChanged()
             fetchData(searchMood)
         }
     }
