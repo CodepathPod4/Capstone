@@ -46,6 +46,8 @@ Here's a video that demos all of the app's implemented features:
 <img src='capstonefinal.gif' title='Video Demo 1' width='50%' alt='Video Demo 1' />
 
 Click video below to watch our demo!
+
+
 [![Watch the video](https://www.shutterstock.com/shutterstock/videos/3612797947/thumb/1.jpg?ip=x480)](https://www.youtube.com/watch?v=Cf0Su1XL0h8)
 
 
