@@ -5,6 +5,8 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -46,6 +48,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.WorkoutButton).setOnClickListener { handleMood("workout") }
         findViewById<Button>(R.id.ChillButton).setOnClickListener { handleMood("chill") }
         findViewById<Button>(R.id.StudyButton).setOnClickListener { handleMood("study") }
+
+        // Set up search button
+        val searchButton = findViewById<Button>(R.id.searchButton)
+        setupSearch(searchButton)
     }
 
     private fun handleMood(mood: String) {
@@ -57,6 +63,7 @@ class MainActivity : AppCompatActivity() {
             "study" to arrayOf("piano", "lo-fi", "classical")
         )
         val selectedTag = tags[mood]?.random() ?: mood
+        Log.d("finalmood", selectedTag)
         songList.clear()
         adapter.notifyDataSetChanged()
         fetchData(selectedTag)
@@ -72,10 +79,22 @@ class MainActivity : AppCompatActivity() {
         client[url, object : JsonHttpResponseHandler() {
             override fun onSuccess(statusCode: Int, headers: Headers, json: JsonHttpResponseHandler.JSON) {
                 val tracks = json.jsonObject.getJSONObject("tracks").getJSONArray("track")
-                for (i in 0 until minOf(20, tracks.length())) {
-                    val track = tracks.getJSONObject(i).getString("name")
-                    val artist = tracks.getJSONObject(i).getJSONObject("artist").getString("name")
-                    getAlbumArt(track, artist)
+                val dataSize = tracks.length()
+                Log.d("datasize", dataSize.toString())
+                if (dataSize != 50){
+                    val errorView = findViewById<TextView>(R.id.errorMessage)
+                    errorView.setText("Cannot find songs matching chosen mood!")
+                } else {
+                    val errorView = findViewById<TextView>(R.id.errorMessage)
+                    errorView.setText("")
+                    for (i in 0 until minOf(20, tracks.length())) {
+                        val track = tracks.getJSONObject(i).getString("name")
+                        val artist =
+                            tracks.getJSONObject(i).getJSONObject("artist").getString("name")
+                        Log.d("lastfm artist", artist)
+                        Log.d("lastfm track", track)
+                        getAlbumArt(track, artist)
+                    }
                 }
             }
 
@@ -119,4 +138,11 @@ class MainActivity : AppCompatActivity() {
         }]
     }
 
+    private fun setupSearch(button: Button) {
+        button.setOnClickListener {
+            val searchMood =findViewById<EditText>(R.id.searchBar).getText().toString()
+            Log.d("search input", "search input set to $searchMood")
+            fetchData(searchMood)
+        }
+    }
 }

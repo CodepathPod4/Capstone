@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <!-- App Title -->
@@ -39,13 +40,17 @@
             android:id="@+id/PartyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Party" />
+            android:text="Party"
+            android:background="@drawable/button_box"
+            app:backgroundTint="@color/party"/>
 
         <Button
             android:id="@+id/SadButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sad"
+            android:background="@drawable/button_box"
+            app:backgroundTint="@color/sad"
             android:layout_marginStart="12dp" />
 
         <Button
@@ -53,6 +58,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Workout"
+            android:background="@drawable/button_box"
+            app:backgroundTint="@color/workout"
             android:layout_marginStart="12dp" />
     </LinearLayout>
 
@@ -73,28 +80,35 @@
             android:id="@+id/ChillButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chill" />
+            android:text="Chill"
+            android:background="@drawable/button_box"
+            app:backgroundTint="@color/chill"/>
 
         <Button
             android:id="@+id/StudyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Study"
-            android:layout_marginStart="12dp" />
+            android:layout_marginStart="12dp"
+            android:background="@drawable/button_box"
+            app:backgroundTint="@color/study"/>
     </LinearLayout>
 
     <!-- RecyclerView -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvSongs"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="377dp"
+        android:layout_height="390dp"
         android:clipToPadding="false"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        app:layout_constraintTop_toBottomOf="@id/buttonRow2"
+        android:paddingTop="0dp"
+        android:paddingBottom="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintVertical_bias="1.0"
         tools:listitem="@layout/item_song" />
 
     <TextView
@@ -110,4 +124,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Search by mood"
+        android:inputType="text"
+        android:fontFamily="serif-monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRow2" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="Search"
+        android:background="@drawable/button_box"
+        app:backgroundTint="@color/search"
+        app:layout_constraintStart_toEndOf="@+id/searchBar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRow2" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif-monospace"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar" />
+
+    <TextView
+        android:id="@+id/searchPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif-monospace"
+        android:text="None of these? Try searching!"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRow2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
