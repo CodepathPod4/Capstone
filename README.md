@@ -1,17 +1,19 @@
 <!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
-# AND101 Milestone 2 - **Team/App Name**
+# AND101 Milestone 2 - Moodify
 
 Submitted by:
-- **Luniva Joshi**
-- **Team Member 2 Name Here**
+- Luniva Joshi
+- Sophia Lu
 - **etc**
 
-Time spent: **6** hours spent in total
+Time spent: 6 hours spent in total
 
 ## Summary
 
-This document provides a summary of our project building process for our app, **App Name Here**
+"Moodify" is an Android app programmed in Kotlin where users can generate a list of songs based on their mood according to different tags from an API called last.fm. Different options for moods include "party," "sad," workout," "chill," and "study." The app utilizes a recycler view which enables users to scroll down for more songs in the generated playlist. This app is perfect for users who want to create a playlist according to their mood, but they do not have the time to do it manually.
+
+
 
 ## Milestone Requirements
 
@@ -19,14 +21,14 @@ This document provides a summary of our project building process for our app, **
 
 The following REQUIRED features are completed:
 
-- [ ] Assign features to each member of your group
-- [ ] Establish a goal time for completing each feature
+- [x] Assign features to each member of your group
+- [x] Establish a goal time for completing each feature
 
 The following REQUIRED files are included:
 
-- [ ] Updated 📄 `project_spec.md`, which contains:
-  - [X] App Overview (Milestone 1)
-  - [X] App Spec (Milestone 1)
+- [x] Updated 📄 `project_spec.md`, which contains:
+  - [x] App Overview (Milestone 1)
+  - [x] App Spec (Milestone 1)
   - [x] Checked off 2+ completed features
   - [ ] 2+ Videos/GIFs of build progress
 
