@@ -5,7 +5,7 @@
 Submitted by:
 - Luniva Joshi
 - Sophia Lu
-- **Juhi Trivedi**
+- Juhi Trivedi
 
 Time spent: 6 hours spent in total
 
