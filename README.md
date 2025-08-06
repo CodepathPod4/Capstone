@@ -43,7 +43,7 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-![](capstonefinal.gif)
+<img src='capstonefinal.gif' title='Video Demo 1' width='50%' alt='Video Demo 1' />
 
 VIDEO created with Android Studio
 
