@@ -7,7 +7,7 @@ Submitted by:
 - Sophia Lu
 - Juhi Trivedi
 
-Time spent: 6 hours spent in total
+Time spent: 10 hours spent in total
 
 ## Summary
 
@@ -30,7 +30,7 @@ The following REQUIRED files are included:
   - [x] App Overview (Milestone 1)
   - [x] App Spec (Milestone 1)
   - [x] Checked off 2+ completed features
-  - [ ] 2+ Videos/GIFs of build progress
+  - [x] 2+ Videos/GIFs of build progress
 
 - [ ] Our 🎥 Demo Video
   - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
@@ -43,9 +43,9 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-![](AND101Capstone.gif)
+![](capstonefinal.gif)
 
-VIDEO created with **your chosen video tool**
+VIDEO created with Android Studio
 
 ## Notes
 
