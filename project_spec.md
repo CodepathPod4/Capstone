@@ -72,8 +72,8 @@ App creation process taught essential skills such as product brainstorming, wire
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
-
-
+<img src='capston1.mp4' title='Video Demo 1' width='50%' alt='Video Demo 1' />
+<img src='capston2.mp4' title='Video Demo 2' width='50%' alt='Video Demo 2' />
 
 
 ## License
