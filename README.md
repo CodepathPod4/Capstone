@@ -51,7 +51,7 @@ Click video below to watch our demo!
 [![Watch the video](https://www.shutterstock.com/shutterstock/videos/3612797947/thumb/1.jpg?ip=x480)](https://www.youtube.com/watch?v=Cf0Su1XL0h8)
 
 
-Click here if link doesn't work: https://www.youtube.com/watch?v=Cf0Su1XL0h8
+Click here if the video doesn't work: https://www.youtube.com/watch?v=Cf0Su1XL0h8
 
 VIDEO created with Android Studio
 
