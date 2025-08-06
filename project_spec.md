@@ -79,6 +79,7 @@ User presses buttons to search for songs matching pre-selected moods
 <img src='capstonedemo1.gif' title='Video Demo 1' width='50%' alt='Video Demo 1' />
 
 User manually searches for songs using the search bar
+
 <img src='capstonedemo2.gif' title='Video Demo 2' width='50%' alt='Video Demo 2' />
 
 
