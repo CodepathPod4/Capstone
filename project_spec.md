@@ -31,6 +31,7 @@ Users can generate a list of songs based on their mood according to different ta
 Required Features:
 
 - At least 5 mood options
+- Allow user to search for a specific mood
 - List of tracks with artist and album art using recylcer view
 
 Stretch Features:
@@ -40,7 +41,7 @@ Stretch Features:
 
 ### 2. Chosen API(s)
 
-Last.fm API
+Last.fm API, Spotify API
 
 ### 3. User Interaction
 
@@ -48,6 +49,9 @@ Required Features
 
 - Mood Buttons
   - User can select mood of the music they want to find
+
+- Search Bar
+    - User can search for songs by a specific mood
 
 - Display of tracks
   - Users can scroll through list of tracks which match the chosen mood
