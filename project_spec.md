@@ -64,6 +64,9 @@ Required Features
 
 ![](AND101CapstoneWireframes.png)
 
+Link to wireframes: https://www.figma.com/design/PHm1Ml9gHi2jXrKmBFdbv9/AND-101-Pod-4-App-Prototype?node-id=0-1&p=f&t=wHVovLiQsCo8HAIr-0
+
+
 ### [BONUS] Interactive Prototype
 
 ## Build Notes
