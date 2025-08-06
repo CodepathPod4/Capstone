@@ -1,55 +1,86 @@
-# Mobile App Brainstorming
-Luniva
-* ***Spotify API where it matches your mood to a playlist***
-* Petfinder API or Adopt-A-Pet API where it shows adoptable pets near you
-* Edamam API or Spoonacular API where users get recipes based on what ingredients they have or just recipe recommendations
+# **Moodify**
+
+## Table of Contents
+
+1. [App Overview](#App-Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+1. [Build Notes](#Build-Notes)
+
+## App Overview
+
+### Description 
+
+Users can generate a list of songs based on their mood according to different tags.
+
+### App Evaluation
+
+<!-- Evaluation of your app across the following attributes -->
+
+- Category: Music
+- Mobile: Convenient for users to create a playlist while on the go
+- Story: Instead of having to create a whole new playlist for your mood, you can just search for one.
+- Market: Anyone who listens to music
+- Habit: Could be used daily for new playlists.
+- Scope: Use Last.fm API to find tracks that match mood and try to incorporate an API that allows for playback if time permits
+
+## Product Spec
+
+### 1. User Features (Required and Optional)
+
+Required Features:
+
+- At least 5 mood options
+- List of tracks with artist and album art using recylcer view
+
+Stretch Features:
+
+- More mood options
+- In-app music player
+
+### 2. Chosen API(s)
+
+Last.fm API
+
+### 3. User Interaction
+
+Required Features
+
+- Mood Buttons
+  - User can select mood of the music they want to find
+
+- Display of tracks
+  - Users can scroll through list of tracks which match the chosen mood
 
 
-Kasish (https://apipheny.io/free-api/)
-* Aviationstack API where you can get realtime flight updates with delay alerts and terminal info
-* **NamePredict - predicts age, gender, and nationanlity based on a name**
-    * **APIs:**
-        * **Agify.io**
-        * **Genderize.io**
-        * **Nationalize.io**
-* AniDB - Search for any anime by title or genre
+## Wireframes
+### [BONUS] Digital Wireframes & Mockups
 
-Juhi
-* weather app - use location for local weather
-* google calendar api - task/event tracking
-* google books/open library/penguin random house api - keep track of read books
-
-Sophia
-* **app to find events within a specified radius - Eventbrite api**
-* app to match you with possible friends/partners based on personality traits - Traitify api
-* app to find instructors on Udemy - Udemy(instructor) api
+<!-- Add picture of your hand sketched wireframes in this section -->
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/PHm1Ml9gHi2jXrKmBFdbv9/AND-101-Pod-4-App-Prototype?node-id=0-1&embed-host=share" allowfullscreen></iframe> 
 
 
-# Top 3 Apps
+### [BONUS] Interactive Prototype
 
-1. Spotify API
-2. NamePredict
-3. EventFinder using eventbrite api
+## Build Notes
 
-# Evaluate and Categorize
+Here's a place for any other notes on the app, it's creation 
+process, or what you learned this unit!  
 
-1. Spotify API
-* Mobile: Can connect to the spotify mobile app. People use the mobile version of Spotify on their phone.
-* Story: Instead of having to create a whole new playlist for your mood,  you can just search for one.
-* Market: Anyone who uses Spotify can use this.
-* Habit: Could be used daily for new playlists.
-* Scope: Challenging to incorporate the spotify API and the spotify app. 
+For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
-2. NamePredict
-* Mobile: On the go, search up a name and find out its origins.
-* Story: For entertainment purposes and for icebreakers!
-* Market: Anyone
-* Habit: For entertainment purposes and for icebreakers!
-* Scope: Doable, can have user input their name, and the app will spit out information. 
+## License
 
-3. EventFinder
-* Mobile: Similar to web app, but can use location when on the go to find events
-* Story: Useful for travel/vacations
-* Market: For anyone traveling 
-* Habit: Used for vacations/traveling as well as meeting new people
-* Scope: Doable, can incorporate option to use users' location to find events
+Copyright 2025 Juhi Trivedi, Sophia Lu, Luniva Joshi, Kasish Jain
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
