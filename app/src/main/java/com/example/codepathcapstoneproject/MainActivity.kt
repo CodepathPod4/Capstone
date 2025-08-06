@@ -17,7 +17,6 @@ import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.RequestHeaders
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
-import kotlin.random.Random
 
 private lateinit var songList: MutableList<Song>
 private lateinit var adapter: SongAdapter
@@ -63,7 +62,6 @@ class MainActivity : AppCompatActivity() {
             "study" to arrayOf("piano", "lo-fi", "classical")
         )
         val selectedTag = tags[mood]?.random() ?: mood
-        Log.d("finalmood", selectedTag)
         songList.clear()
         adapter.notifyDataSetChanged()
         fetchData(selectedTag)
@@ -83,10 +81,10 @@ class MainActivity : AppCompatActivity() {
                 Log.d("datasize", dataSize.toString())
                 if (dataSize != 50){
                     val errorView = findViewById<TextView>(R.id.errorMessage)
-                    errorView.setText("Cannot find songs matching chosen mood!")
+                    errorView.text = "Cannot find songs matching chosen mood!"
                 } else {
                     val errorView = findViewById<TextView>(R.id.errorMessage)
-                    errorView.setText("")
+                    errorView.text = ""
                     for (i in 0 until minOf(20, tracks.length())) {
                         val track = tracks.getJSONObject(i).getString("name")
                         val artist =
