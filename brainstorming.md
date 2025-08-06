@@ -53,3 +53,5 @@ Sophia
 * Market: For anyone traveling 
 * Habit: Used for vacations/traveling as well as meeting new people
 * Scope: Doable, can incorporate option to use users' location to find events
+
+**Final Choice: Mood Playlist App**
