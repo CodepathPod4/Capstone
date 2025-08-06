@@ -72,7 +72,10 @@ App creation process taught essential skills such as product brainstorming, wire
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
+User presses buttons to search for songs matching pre-selected moods
 <img src='capstonedemo1.gif' title='Video Demo 1' width='50%' alt='Video Demo 1' />
+
+User manually searches for songs using the search bar
 <img src='capstonedemo2.gif' title='Video Demo 2' width='50%' alt='Video Demo 2' />
 
 
