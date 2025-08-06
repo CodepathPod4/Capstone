@@ -61,7 +61,7 @@ Required Features
 ### [BONUS] Digital Wireframes & Mockups
 
 <!-- Add picture of your hand sketched wireframes in this section -->
-<img src='https://embed.figma.com/design/PHm1Ml9gHi2jXrKmBFdbv9/AND-101-Pod-4-App-Prototype' width='50%'/>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/PHm1Ml9gHi2jXrKmBFdbv9/AND-101-Pod-4-App-Prototype?node-id=0-1&embed-host=share" allowfullscreen></iframe> 
 
 
 ### [BONUS] Interactive Prototype
