@@ -31,6 +31,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintTop_toBottomOf="@id/instructions"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +72,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginTop="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintTop_toBottomOf="@id/buttonRow1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,8 +110,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchBar"
-        app:layout_constraintVertical_bias="1.0"
-        tools:listitem="@layout/item_song" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_song"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/instructions"
@@ -132,9 +135,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
         android:ems="10"
+        android:fontFamily="serif-monospace"
         android:hint="Search by mood"
         android:inputType="text"
-        android:fontFamily="serif-monospace"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRow2" />
 
