@@ -45,6 +45,8 @@ Here's a video that demos all of the app's implemented features:
 
 <img src='capstonefinal.gif' title='Video Demo 1' width='50%' alt='Video Demo 1' />
 
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Cf0Su1XL0h8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 VIDEO created with Android Studio
 
 ## Notes
