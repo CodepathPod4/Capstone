@@ -30,9 +30,9 @@
 
 Required Features:
 
-- At least 5 mood options
-- Allow user to search for a specific mood
-- List of tracks with artist and album art using recylcer view
+- [x] At least 5 mood options
+- [x] Allow user to search for a specific mood
+- [x] List of tracks with artist and album art using recylcer view
 
 Stretch Features:
 
