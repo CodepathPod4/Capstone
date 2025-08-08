@@ -23,6 +23,9 @@ The following REQUIRED features are completed:
 
 - [x] Assign features to each member of your group
 - [x] Establish a goal time for completing each feature
+- [x] Implement buttons with pre-selected moods
+- [x] Implement search bar for users to search for moods
+- [x] Display a scrolling list of songs with their artists and album covers
 
 The following REQUIRED files are included:
 
@@ -37,7 +40,7 @@ The following REQUIRED files are included:
 
 The following EXTRA features are implemented:
 
-- [ ] List anything else that you added to improve your submission!
+- [x] Overall styling/colorful buttons
 
 ## 🎥 Demo Video
 
